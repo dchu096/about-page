@@ -1,1 +1,243 @@
+<html>
+<head>
+<script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflB7PmFQ/www-widgetapi.js" async></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+</script>
+<script src="song.js"></script>
+<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="main.css">
+<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+<noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+<meta property="og:title" content="Adam Gilbert">
+<meta property="og:description" content="Webpage made by Adam Gilbert modified by user096">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:image" content="https://avatars2.githubusercontent.com/u/39256422?s=460&v=4">
+<meta property="og:site_name" content="Daniel Chu">
+<title>User096</title>
+<link rel="icon" href="https://avatars1.githubusercontent.com/u/39256422?s=180&v=4">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128248944-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-128248944-1');
+</script>
+</head>
+<body>
+<div class="video-background">
+<div class="video-foreground">
+<div id="player"></div>
+</div>
+</div>
+<!-- Wrapper -->
+<div id="wrapper">
+<style>
+                * {
+					box-sizing: border-box;
+				}
+					.video-background {
+					background: #000;
+					position: fixed;
+					top: 0; right: 0; bottom: 0; left: 0;
+					z-index: -99;
+				}
+				.video-foreground,.video-background iframe {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					pointer-events: none;
+				}
+				@media (min-aspect-ratio: 16/9) {
+					.video-foreground { height: 300%; top: -100%; }
+				}
+				@media (max-aspect-ratio: 16/9) {
+					.video-foreground { width: 300%; left: -100%; }
+				}
+</style>
+
+<!-- Main -->
+
+<section id="main">
+<header>
+<span><img src="./user096.gif" alt="User096 logo"></span>
+<h1>Daniel Chu</h1>
+<p>A mini HTML ceator and like combining different things into 1. Hope you enjoy on my webpage.</p>
+</header>
+<br>
+<!--
+<hr />
+<h2>Extra Stuff!</h2>
+<form method="post" action="#">
+	<div class="field">
+						<input type="text" name="name" id="name" placeholder="Name" />
+					</div>
+					<div class="field">
+						<input type="email" name="email" id="email" placeholder="Email" />
+					</div>
+					<div class="field">
+						<div class="select-wrapper">
+							<select name="department" id="department">
+								<option value="">Department</option>
+								<option value="sales">Sales</option>
+								<option value="tech">Tech Support</option>
+								<option value="null">/dev/null</option>
+							</select>
+						</div>
+					</div>
+					<div class="field">
+						<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+					</div>
+					<div class="field">
+						<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+					</div>
+					<div class="field">
+						<label>But are you a robot?</label>
+						<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
+						<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
+					</div>
+					<ul class="actions">
+						<li><a href="#" class="button">Get Started</a></li>
+					</ul>
+				</form>
+				<hr />
+-->
+<footer>
+<a onclick="javascript:about();">About Me</a><br>
+<a onclick="javascript:projects();">Contents</a><br>
+<a onclick="javascript:songs();">Song List</a>
+</footer>
+</section>
+<div id="main2" style="display:none;">
+<section id="main">
+<header>
+<h1>Songs List</h1>
+						<p>Click on one of these songs to play them.<br>Not picking one will load a song at random.<br></p>
+						<a href="?song=0">1. Epic Sax Guy 10 Hours</a>
+						<br>
+						<a href="?song=1">2. Imagine Dragons - Thunder</a>
+						<br>
+						<a href="?song=2">3. Shooting Stars</a>
+						<br>
+						<a href="?song=3">4. Eifel 65 - I'm Blue</a>
+						<br>
+						<a href="?song=4">5. Red Woah</a>
+						<br>
+						<a href="?song=5">6. Matisyahu - One Day</a>
+						<br>
+						<a href="?song=6">7. Windows XP Error Remix</a>
+						<br>
+						<a href="?song=7">8. Darude - Sandstorm</a>
+						<br>
+						<a href="?song=8">9. Dance Till Your Dead</a>
+						<br>
+						<a href="?song=9">10. Broken Bells - The High Road</a>
+						<br>
+						<a href="?song=10">11. Portal Radio for Two Hours</a>
+						<br>
+						<a href="?">Random</a>
+					</header>
+					<br>
+					<a onclick="javascript:songsOff();">Go Back</a>
+				</section>
+			</div>
+			<div id="main3" style="display:none;">
+				<section id="main">
+					<header>
+						<h1>My Projects</h1>
+						<p>Heres some stuff about me</p>
+
+						<ul class="icons">
+							<li><a href="http://about.user096.rf.gd" class="fa-server">About page</a>
+								<p>My about page</p>
+							</li>
+							<li><a href="http://music.user096.rf.gd" class="fa-rocket">Music</a>
+								<p>My online music platform</p>
+							</li>
+
+							<li><a href="http://forum.user096.rf.gd" class="fa-commenting">My forum</a>
+								<p>Forum</p>
+							</li>
+							<br>
+							<li><a href="https://github.com/user096" class="fa-github">Github</a>
+								<p>GitHub</p>
+							</li>
+
+							<li><a href="https://user096.github.io/fpv-game" class="fa-commenting">FPV</a>
+								<p>FPV-game</p>
+							</li>
+							<li><a href="http://mcpe.user096.rf.gd" class="fa-game">User096's mcpe server</a>
+								<p>My mcpe server</p>
+							</li>
+							<br>
+							<li><a href="https://discord.gg/W6pNcPn" class="fa-game">My discord server</a>
+								<p>My discord server</p>
+							</li>
+							<li><a href="https://www.youtube.com/channel/UCdsd_bifVCTwyb5TMeMxe3Q" class="fa-game">Youtube</a>
+								<p>My Youtube</p>
+							</li>
+						</ul>
+
+						<p>Domains you may find my stuff on are:</p>
+						<ul>
+							<a href="https://user096.tk">user096.tk</a>
+							<a href="user096.endl.site">user096.endl.site</a>
+							<a href="https://user096.rf.gd">user096.rf.gd</a>
+						</ul>
+					</header>
+					<br>
+					<a onclick="javascript:projectsOff();">Go Back</a>
+				</section>
+			</div>
+			<div id="main4" style="display:none;">
+				<section id="main">
+					<header>
+						<h1>About Me</h1>
+						<p>Hi Im Daniel Chu</p>
+						<br>
+						<p>Im only a high school student but do different programming: </p>
+						<ul>
+							<li>HTML/CSS/JS programming</li>
+							<li>nodejs/discordjs bot making</li>
+							<li>Android app making</li>
+							<li>Unity gaming making and more...</li>
+						</ul>
+					</header>
+					<br>
+					<a onclick="javascript:aboutOff();">Go Back</a>
+				</section>
+			</div>
+
+			<!-- Footer -->
+			<!-- origionally by Adam Gilbert Modified by user096 -->
+
+			<footer id="footer">
+				<p>Powered by <a href="https://theendlessweb.com">Endless Hosting</a></p>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+
+		<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+		<script>
+			if ('addEventListener' in window) {
+				window.addEventListener('load', function() {
+					document.body.className = document.body.className.replace(/\bis-loading\b/, '');
+				})
+				document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '')
+			}
+		</script>
+
+	</body>
+</html>
